@@ -3,12 +3,9 @@
 **Advanced Language Model for AZerbaijan — Resource Roster**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19023843.svg)](https://doi.org/10.5281/zenodo.19023843)
 [![Artifacts](https://img.shields.io/badge/artifacts-36-blue.svg)]()
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)]()
-
-![ALMAZ Ecosystem](figures/almaz_ecosystem.svg)
-
 
 The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP artifacts. It is the shared reference dataset for the [ALMAZ paper series](#citing-the-almaz-paper-series) and is designed to support reproducible research in low-resource Azerbaijani language technology.
 
@@ -20,7 +17,7 @@ The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP art
 
 ---
 
-## Roster contents
+## Registry contents
 
 The roster currently covers **36 artifacts** across five types:
 
@@ -49,9 +46,9 @@ Layer 5 — Applications & frontier
 ```
 almaz-roster/
 ├── data/
-│   ├── roster.csv        ← primary artifact table (human-readable)
-│   ├── roster.json       ← same data for programmatic use
-│   └── roster.xlsx       ← formatted spreadsheet with legend and stats
+│   ├── registry.csv        ← primary artifact table (human-readable)
+│   ├── registry.json       ← same data for programmatic use
+│   └── registry.xlsx       ← formatted spreadsheet with legend and stats
 ├── docs/
 │   ├── schema.md           ← column definitions and type taxonomy
 │   ├── contributing.md     ← how to add or update an artifact
@@ -69,9 +66,9 @@ almaz-roster/
 
 ---
 
-## Roster schema
+## Registry schema
 
-Each row in `roster.csv` describes one artifact:
+Each row in `registry.csv` describes one artifact:
 
 | Column | Description | Example |
 |---|---|---|
@@ -96,7 +93,7 @@ Full column definitions are in [`docs/schema.md`](docs/schema.md).
 ```python
 import pandas as pd
 
-df = pd.read_csv("data/roster.csv")
+df = pd.read_csv("data/registry.csv")
 
 # All corpora
 corpora = df[df["type"] == "corpus"]
@@ -117,14 +114,14 @@ print(df.groupby("type")["id"].count())
 If you use this roster in your research, please cite:
 
 ```bibtex
-@dataset{almaz_roster_2026,
+@dataset{almaz_registry_2026,
   title     = {{ALMAZ} Resource Roster: A Curated Catalog of
                Azerbaijani {NLP} Artifacts},
-  author    = {},
+  author    = {Orhan Ibrahimzade},
   year      = {2026},
   version   = {0.1.0},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.19023843},
   url       = {https://github.com/almaz-nlp/almaz-roster},
   note      = {Shared reference dataset for the ALMAZ paper series}
 }
@@ -136,7 +133,7 @@ If you use this roster in your research, please cite:
 
 Each paper in the series cites the roster version that existed at submission time.
 
-| Paper | Short title | Roster version cited |
+| Paper | Short title | Registry version cited |
 |---|---|---|
 | Paper 1 — ALMAZ-Survey | Mapping the Azerbaijani AI ecosystem | v0.1.0 |
 | Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.0 |
@@ -151,7 +148,7 @@ Each paper in the series cites the roster version that existed at submission tim
 We welcome additions and corrections. Before opening a pull request:
 
 1. Read [`docs/contributing.md`](docs/contributing.md)
-2. Add your artifact(s) to `data/roster.csv` following the schema
+2. Add your artifact(s) to `data/registry.csv` following the schema
 3. Run `python scripts/validate.py` to check for errors
 4. Open a PR — the CI workflow will run validation automatically
 
@@ -165,7 +162,7 @@ Each release is archived on [Zenodo](https://zenodo.org) with a permanent DOI.
 
 | Version | DOI | Notes |
 |---|---|---|
-| v0.1.0 | 10.5281/zenodo.XXXXXXX | Seed data — 36 artifacts |
+| v0.1.0 | 10.5281/zenodo.19023843 | Seed data — 36 artifacts |
 
 Use the DOI of the specific version you used, not the concept DOI, to ensure reproducibility.
 
@@ -179,7 +176,7 @@ The roster metadata is released under [CC-BY 4.0](https://creativecommons.org/li
 
 ## Acknowledgements
 
-This roster builds on prior community work, in particular the [awesome-azerbaijani-nlp](https://github.com/alexeyev/awesome-azerbaijani-nlp) list by Alex Alekseyev, the [aLLMA Lab](https://huggingface.co/allmalab) DOLLMA corpus and benchmark suite, and the [TUMLU](https://github.com/ceferisbarov/TUMLU) benchmark by Jafar Isbarov and collaborators.
+This registry builds on prior community work, in particular the [awesome-azerbaijani-nlp](https://github.com/alexeyev/awesome-azerbaijani-nlp) list by Alex Alekseyev, the [aLLMA Lab](https://huggingface.co/allmalab) DOLLMA corpus and benchmark suite, and the [TUMLU](https://github.com/ceferisbarov/TUMLU) benchmark by Jafar Isbarov and collaborators.
 
 ---
 

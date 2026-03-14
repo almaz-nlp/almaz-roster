@@ -31,8 +31,8 @@ Thank you for helping build the most comprehensive catalog of Azerbaijani NLP ar
 ### Step 1 — Fork and clone
 
 ```bash
-git clone https://github.com/almaz-nlp/almaz-registry.git
-cd almaz-registry
+git clone https://github.com/almaz-nlp/almaz-roster.git
+cd almaz-roster
 git checkout -b add/your-artifact-name
 ```
 
@@ -147,7 +147,7 @@ Each tagged version is automatically archived on Zenodo with a new DOI. When cit
 
 ## Questions
 
-Open a [GitHub issue](https://github.com/almaz-nlp/almaz-registry/issues) with the label `question`. Do not email maintainers directly for registry questions — public issues build a searchable knowledge base for future contributors.
+Open a [GitHub issue](https://github.com/almaz-nlp/almaz-roster/issues) with the label `question`. Do not email maintainers directly for registry questions — public issues build a searchable knowledge base for future contributors.
 
 ---
 

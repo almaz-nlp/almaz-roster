@@ -14,7 +14,7 @@ Each release is archived on Zenodo — use the DOI of the specific version you c
 
 ## [0.1.0] — 2026-03-14
 
-**Zenodo DOI:** `10.5281/zenodo.XXXXXXX`
+**Zenodo DOI:** `10.5281/zenodo.19023843`
 **Cited by:** ALMAZ-Survey (Paper 1)
 
 ### Added
