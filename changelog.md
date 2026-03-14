@@ -12,6 +12,25 @@ Each release is archived on Zenodo — use the DOI of the specific version you c
 
 ---
 
+## [0.2.0] — 2026-03-15
+
+**Zenodo DOI:** `pending — tag v0.2.0 to mint`
+**Cited by:** ALMAZ-Corpus (Paper 2)
+
+### Added
+
+- 8 new artifacts closing 3 of 4 coverage gaps identified in v0.1.0
+- **Speech (4 artifacts):** Common Voice AZ · FLEURS-AZ · ISSAI Turkic ASR · ISSAI Turkic TTS · Whisper-large-v3 (AZ support)
+- **Translation (3 artifacts):** ParaCrawl AZ-EN · OPUS AZ corpora · TIL-MT Azerbaijani
+- **Government (1 artifact):** eQanun Legal Corpus (~55K legal documents from e-qanun.az)
+- Total artifacts: **44** (up from 36)
+
+### Still missing
+
+- `medical` — no known open Azerbaijani medical text corpus; flagged as priority for v0.3.0
+
+---
+
 ## [0.1.0] — 2026-03-14
 
 **Zenodo DOI:** `10.5281/zenodo.19023843`
