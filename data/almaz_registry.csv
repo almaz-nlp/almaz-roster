@@ -34,4 +34,4 @@ AZ-MODEL-009,AZ Sentiment XLM-R,model,3,HuggingFace / LocalDoc,multilingual fine
 AZ-MODEL-010,AzerBERT (Iranian AZ),model,3,HuggingFace / language-ml-lab,base encoder,general,research,https://huggingface.co/language-ml-lab/iranian-azerbaijani-nlp,P3,For Iranian Azerbaijani (azb); NER + POS + classification
 AZ-TOOL-001,Azmorph,tool,1,GitHub,morphological analyzer,morphology,research,https://github.com/alexeyev/awesome-azerbaijani-nlp,P1,Pre-alpha morphological analyzer for Azerbaijani
 AZ-TOOL-002,MorAz,tool,1,EMNLP 2018,morphological analyzer,morphology,open,https://aclanthology.org/D18-2005/,P1,Open-source morphological analyzer; Özenç et al. 2018
-AZ-TOOL-003,awesome-azerbaijani-nlp,tool,1,GitHub / alexeyev,resource list,meta,MIT,https://github.com/alexeyev/awesome-azerbaijani-nlp,P1,Curated list of AZ NLP resources; precursor to ALMAZ registry
+AZ-TOOL-003,awesome-azerbaijani-nlp,tool,1,GitHub / alexeyev,resource list,meta,MIT,https://github.com/alexeyev/awesome-azerbaijani-nlp,P1,Curated list of AZ NLP resources; precursor to ALMAZ roster

@@ -1,0 +1,40 @@
+name: Archive release on Zenodo
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  zenodo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas openpyxl requests
+
+      - name: Generate JSON from CSV
+        run: |
+          python - <<'PYEOF'
+          import pandas as pd, json
+          df = pd.read_csv("data/registry.csv")
+          df.to_json("data/registry.json", orient="records", indent=2, force_ascii=False)
+          print(f"registry.json written: {len(df)} artifacts")
+          PYEOF
+
+      - name: Validate before release
+        run: python scripts/validate.py --path data/registry.csv
+
+      - name: Upload to Zenodo
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          echo "Zenodo upload step — configure with your deposition ID"
+          echo "See: https://developers.zenodo.org/#rest-api"
+          echo "Tag: ${{ github.ref_name }}"

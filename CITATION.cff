@@ -1,15 +1,15 @@
 cff-version: 1.2.0
-title: "ALMAZ Resource Registry: A Curated Catalog of Azerbaijani NLP Artifacts"
-message: "If you use this registry in your research, please cite it as below."
+title: "ALMAZ Resource Roster: A Curated Catalog of Azerbaijani NLP Artifacts"
+message: "If you use this roster in your research, please cite it as below."
 type: dataset
 version: "0.1.0"
 date-released: "2026-03-14"
 license: CC-BY-4.0
-repository-code: "https://github.com/almaz-nlp/almaz-registry"
-url: "https://github.com/almaz-nlp/almaz-registry"
+repository-code: "https://github.com/almaz-nlp/almaz-roster"
+url: "https://github.com/almaz-nlp/almaz-roster"
 doi: "10.5281/zenodo.XXXXXXX"
 abstract: >
-  The ALMAZ Resource Registry is a curated, versioned catalog of
+  The ALMAZ Resource Roster is a curated, versioned catalog of
   Azerbaijani NLP artifacts including corpora, datasets, pretrained
   models, evaluation benchmarks, and tools. It serves as the shared
   reference dataset for the ALMAZ paper series (Advanced Language
@@ -24,17 +24,17 @@ keywords:
   - Turkic languages
   - resource catalog
 authors:
-  - family-names: ""
-    given-names: ""
+  - family-names: "Ibrahimzade"
+    given-names: "Orhan"
     affiliation: ""
-    orcid: ""
+    orcid: "https://orcid.org/0009-0007-3106-1745"
 references:
   - type: article
     title: >
       ALMAZ: Mapping the Azerbaijani AI Ecosystem —
       A Systematic Survey of Language Resources, Models, and Tools
     authors:
-      - family-names: ""
-        given-names: ""
+      - family-names: "Ibrahimzade"
+        given-names: "Orhan"
     year: 2026
     journal: "arXiv preprint"

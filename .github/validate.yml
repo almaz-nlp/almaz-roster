@@ -1,0 +1,24 @@
+name: Validate registry
+
+on:
+  pull_request:
+    paths:
+      - "data/registry.csv"
+      - "scripts/validate.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run validation (schema only, no link check)
+        run: python scripts/validate.py --path data/registry.csv
+
+      - name: Print stats
+        run: python scripts/stats.py
