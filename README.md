@@ -6,6 +6,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19023843.svg)](https://doi.org/10.5281/zenodo.19023843)
 [![Artifacts](https://img.shields.io/badge/artifacts-36-blue.svg)]()
 [![Version](https://img.shields.io/badge/version-0.1.0-green.svg)]()
+[![DOI](https://zenodo.org/badge/1181870692.svg)](https://doi.org/10.5281/zenodo.19023843)
+
 
 The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP artifacts. It is the shared reference dataset for the [ALMAZ paper series](#citing-the-almaz-paper-series) and is designed to support reproducible research in low-resource Azerbaijani language technology.
 
