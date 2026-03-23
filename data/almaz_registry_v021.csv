@@ -1,0 +1,43 @@
+id,name,type,layer,source,size,domain,license,link,paper,notes
+AZ-CORP-001,DOLLMA,corpus,2,HuggingFace / allmalab,651M words,general · news · legal,CC-BY-SA,https://huggingface.co/datasets/allmalab/DOLLMA,P2,Primary LLM pretraining corpus
+AZ-CORP-002,CC-100-AZ,corpus,1,HuggingFace / cc100,29M sentences,web crawl,unknown,https://huggingface.co/datasets/cc100,P2,Common Crawl subset for Azerbaijani
+AZ-CORP-003,OSCAR-AZ,corpus,1,HuggingFace / oscar,1.2GB,web crawl,CC0,https://oscar-corpus.com,P2,OSCAR Azerbaijani subset
+AZ-CORP-004,Wikipedia-AZ,corpus,1,Wikimedia,190K articles,encyclopedia,CC-BY-SA,https://az.wikipedia.org,P2,Azerbaijani Wikipedia dump
+AZ-CORP-005,mC4-AZ,corpus,1,HuggingFace / mc4,4.5GB,web crawl,ODC-BY,https://huggingface.co/datasets/mc4,P2,Multilingual C4 Azerbaijani subset
+AZ-CORP-006,CulturaX-AZ,corpus,1,HuggingFace / uonlp,2.1GB,web crawl,CC-BY-SA,https://huggingface.co/datasets/uonlp/CulturaX,P2,CulturaX Azerbaijani subset
+AZ-CORP-007,HPLT-AZ,corpus,1,HuggingFace / HPLT,800MB,web crawl,CC0,https://huggingface.co/datasets/HPLT/HPLT1.0,P2,HPLT v1.0 Azerbaijani
+AZ-CORP-008,FineWeb-AZ,corpus,1,HuggingFace / HuggingFaceFW,500MB,web crawl,ODC-BY,https://huggingface.co/datasets/HuggingFaceFW/fineweb,P2,FineWeb Azerbaijani subset
+AZ-CORP-009,Glot500-AZ,corpus,1,HuggingFace / cis-lmu,150MB,mixed,Apache-2.0,https://huggingface.co/datasets/cis-lmu/Glot500,P2,Glot500 Azerbaijani subset
+AZ-DATA-001,AzNER,dataset,2,GitHub / LocalDoc,15K samples,NER,MIT,https://github.com/LocalDoc/azerbaijani-ner-dataset,P2,Named entity recognition dataset
+AZ-DATA-002,AzSentiment,dataset,2,GitHub / ceferisbarov,5K samples,sentiment,MIT,https://github.com/ceferisbarov/azerbaijani-sentiment-analysis,P2,Sentiment analysis dataset
+AZ-DATA-003,AzQA,dataset,2,HuggingFace / allmalab,10K samples,QA,CC-BY,https://huggingface.co/datasets/allmalab/AzQA,P2,Question answering dataset
+AZ-DATA-004,AzParaphrase,dataset,2,HuggingFace / allmalab,8K pairs,paraphrase,CC-BY,https://huggingface.co/datasets/allmalab/AzParaphrase,P2,Paraphrase detection dataset
+AZ-DATA-005,TurkicMT-AZ,dataset,2,HuggingFace / turkic_xwmt,50K pairs,translation,CC-BY,https://huggingface.co/datasets/turkic_xwmt,P2,Turkic cross-lingual MT benchmark
+AZ-DATA-006,FLORES-AZ,dataset,2,HuggingFace / facebook,2K sentences,translation,CC-BY-SA,https://huggingface.co/datasets/facebook/flores,P2,FLORES-200 Azerbaijani subset
+AZ-DATA-007,NLLB-Seed-AZ,dataset,2,HuggingFace / allenai,6K sentences,translation,CC-BY,https://huggingface.co/datasets/allenai/nllb,P2,NLLB seed data for Azerbaijani
+AZ-DATA-008,XL-Sum-AZ,dataset,2,HuggingFace / csebuetnlp,10K samples,summarization,CC-BY-NC-SA,https://huggingface.co/datasets/csebuetnlp/xlsum,P2,XL-Sum Azerbaijani subset
+AZ-DATA-009,Belebele-AZ,dataset,2,HuggingFace / facebook,900 samples,reading comprehension,CC-BY-SA,https://huggingface.co/datasets/facebook/belebele,P4,Belebele Azerbaijani subset
+AZ-DATA-010,SIB-200-AZ,dataset,2,HuggingFace / Davlan,200 samples,topic classification,CC-BY-SA,https://huggingface.co/datasets/Davlan/sib200,P4,SIB-200 Azerbaijani subset
+AZ-DATA-011,660K-AZ-EN-Parallel,dataset,2,HuggingFace / omar07ibrahim,666K pairs,translation,unknown,https://huggingface.co/datasets/omar07ibrahim/660K_AZERBAIJAN-ENGLISH_PARALLEL,P2,Largest public Az-En parallel corpus; includes reliability scores and source tracking
+AZ-DATA-012,Orca-AZ,dataset,2,HuggingFace / omar07ibrahim,500K samples,instruction,unknown,https://huggingface.co/datasets/omar07ibrahim/orca_firstpart_AZ,P2,Azerbaijani translation of Microsoft Orca instruction dataset
+AZ-DATA-013,AzCon,dataset,2,HuggingFace / omar07ibrahim,237K samples,conversational,unknown,https://huggingface.co/datasets/omar07ibrahim/azcon,P2,Azerbaijani conversational QA dataset
+AZ-DATA-014,UltraFeedback-AZ,dataset,2,HuggingFace / omar07ibrahim,61K pairs,preference,unknown,https://huggingface.co/datasets/omar07ibrahim/ultrafeedback_binarized-BIZIM,P2,First Azerbaijani preference dataset for RLHF/DPO alignment
+AZ-DATA-015,Alpaca-AZ-Cleaned,dataset,2,HuggingFace / omar07ibrahim,52K samples,instruction,unknown,https://huggingface.co/datasets/omar07ibrahim/alpaca-cleaned_AZERBAIJANI,P2,Azerbaijani translation of Stanford Alpaca cleaned dataset
+AZ-DATA-016,AZ-EN-Dataset,dataset,2,HuggingFace / omar07ibrahim,549K pairs,translation,unknown,https://huggingface.co/datasets/omar07ibrahim/AZERBAIJAN-ENGLISH-DATASET,P2,Az-En parallel translation dataset
+AZ-BENCH-001,TUMLU,benchmark,4,GitHub / ceferisbarov,multi-task,evaluation,MIT,https://github.com/ceferisbarov/TUMLU,P4,Turkic Unified Multilingual Language Understanding benchmark
+AZ-BENCH-002,AzEval,benchmark,4,HuggingFace / allmalab,multi-task,evaluation,CC-BY,https://huggingface.co/datasets/allmalab/AzEval,P4,Comprehensive Azerbaijani evaluation suite
+AZ-BENCH-003,XTREME-AZ,benchmark,4,HuggingFace / google,multi-task,evaluation,Apache-2.0,https://huggingface.co/datasets/google/xtreme,P4,XTREME Azerbaijani tasks
+AZ-BENCH-004,XNLI-AZ,benchmark,4,HuggingFace / facebook,5K samples,NLI,CC-BY-NC,https://huggingface.co/datasets/facebook/xnli,P4,Cross-lingual NLI Azerbaijani
+AZ-MODEL-001,BERT-AZ,model,3,HuggingFace / LocalDoc,110M params,encoder,Apache-2.0,https://huggingface.co/LocalDoc/azerbaijani-bert,P3,Azerbaijani BERT base model
+AZ-MODEL-002,mBERT,model,3,HuggingFace / google,110M params,encoder,Apache-2.0,https://huggingface.co/google-bert/bert-base-multilingual-cased,P3,Multilingual BERT with Az support
+AZ-MODEL-003,XLM-R-AZ,model,3,HuggingFace / facebook,270M params,encoder,MIT,https://huggingface.co/facebook/xlm-roberta-base,P3,XLM-RoBERTa with Az support
+AZ-MODEL-004,NLLB-AZ,model,3,HuggingFace / facebook,1.3B params,translation,CC-BY-NC,https://huggingface.co/facebook/nllb-200-distilled-600M,P3,NLLB translation model with Az
+AZ-MODEL-005,mT5-AZ,model,3,HuggingFace / google,300M params,seq2seq,Apache-2.0,https://huggingface.co/google/mt5-base,P3,Multilingual T5 with Az support
+AZ-MODEL-006,Qwen2-AZ,model,3,HuggingFace / Qwen,7B params,decoder,Apache-2.0,https://huggingface.co/Qwen/Qwen2-7B,P3,Qwen2 with Azerbaijani capability
+AZ-MODEL-007,Llama3-AZ,model,3,HuggingFace / meta-llama,8B params,decoder,Llama-3,https://huggingface.co/meta-llama/Meta-Llama-3-8B,P3,Llama 3 with Azerbaijani
+AZ-MODEL-008,GPT-AZ,model,3,HuggingFace / allmalab,1.5B params,decoder,CC-BY-NC,https://huggingface.co/allmalab/GPT-AZ,P3,Azerbaijani GPT model
+AZ-MODEL-009,AzerBERT,model,3,HuggingFace / azlang,110M params,encoder,MIT,https://huggingface.co/azlang/AzerBERT,P3,AzerBERT language model
+AZ-MODEL-010,TURNA-AZ,model,3,HuggingFace / boun-tabi,400M params,encoder-decoder,Apache-2.0,https://huggingface.co/boun-tabi/TURNA,P3,Turkish-Azerbaijani transfer model
+AZ-TOOL-001,awesome-azerbaijani-nlp,tool,5,GitHub / alexeyev,resource list,curation,CC0,https://github.com/alexeyev/awesome-azerbaijani-nlp,P1,Curated list of Az NLP resources
+AZ-TOOL-002,AzMorph,tool,5,GitHub / aznlp,morphological analyzer,NLP tool,MIT,https://github.com/aznlp/azmorph,P1,Azerbaijani morphological analyzer
+AZ-TOOL-003,AzSpell,tool,5,GitHub / aznlp,spell checker,NLP tool,MIT,https://github.com/aznlp/azspell,P1,Azerbaijani spell checker
