@@ -1,97 +1,183 @@
-# ALMAZ Registry Update v0.2.1
+# ALMAZ Resource Roster
 
-## New Datasets Added from omar07ibrahim
+**Advanced Language Model for AZerbaijan — Resource Roster**
 
-This update adds **6 new datasets** from the Hugging Face contributor [omar07ibrahim](https://huggingface.co/omar07ibrahim), bringing the total artifact count from **36 to 42**.
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19023843.svg)](https://doi.org/10.5281/zenodo.19023843)
+[![Artifacts](https://img.shields.io/badge/artifacts-36-blue.svg)]()
+[![Version](https://img.shields.io/badge/version-0.1.0-green.svg)]()
+
+The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP artifacts. It is the shared reference dataset for the [ALMAZ paper series](#citing-the-almaz-paper-series) and is designed to support reproducible research in low-resource Azerbaijani language technology.
 
 ---
 
-## New Entries (CSV rows to append)
+## What is ALMAZ?
 
-```csv
-AZ-DATA-011,660K-AZ-EN-Parallel,dataset,2,HuggingFace / omar07ibrahim,666K pairs,translation,unknown,https://huggingface.co/datasets/omar07ibrahim/660K_AZERBAIJAN-ENGLISH_PARALLEL,P2,Largest public Az-En parallel corpus; includes reliability scores and source tracking
-AZ-DATA-012,Orca-AZ,dataset,2,HuggingFace / omar07ibrahim,500K samples,instruction,unknown,https://huggingface.co/datasets/omar07ibrahim/orca_firstpart_AZ,P2,Azerbaijani translation of Microsoft Orca instruction dataset
-AZ-DATA-013,AzCon,dataset,2,HuggingFace / omar07ibrahim,237K samples,conversational,unknown,https://huggingface.co/datasets/omar07ibrahim/azcon,P2,Azerbaijani conversational QA dataset
-AZ-DATA-014,UltraFeedback-AZ,dataset,2,HuggingFace / omar07ibrahim,61K pairs,preference,unknown,https://huggingface.co/datasets/omar07ibrahim/ultrafeedback_binarized-BIZIM,P2,First Azerbaijani preference dataset for RLHF/DPO alignment
-AZ-DATA-015,Alpaca-AZ-Cleaned,dataset,2,HuggingFace / omar07ibrahim,52K samples,instruction,unknown,https://huggingface.co/datasets/omar07ibrahim/alpaca-cleaned_AZERBAIJANI,P2,Azerbaijani translation of Stanford Alpaca cleaned dataset
-AZ-DATA-016,AZ-EN-Dataset,dataset,2,HuggingFace / omar07ibrahim,549K pairs,translation,unknown,https://huggingface.co/datasets/omar07ibrahim/AZERBAIJAN-ENGLISH-DATASET,P2,Az-En parallel translation dataset
+**ALMAZ** (Advanced Language Model for **AZ**erbaijan) is a five-paper research program mapping the complete Azerbaijani AI ecosystem — from raw text sources to deployed applications. The name doubles as the Azerbaijani word for *diamond* (الماز · алмаз), reflecting the goal of making Azerbaijani NLP a precise and valuable resource for the research community.
+
+---
+
+## Registry contents
+
+The roster currently covers **36 artifacts** across five types:
+
+| Type | Count | Description |
+|---|---|---|
+| Corpus | 9 | Raw and cleaned text corpora for pretraining |
+| Dataset | 10 | Labeled datasets for fine-tuning and evaluation |
+| Benchmark | 4 | Standardized evaluation suites |
+| Model | 10 | Pretrained and fine-tuned language models |
+| Tool | 3 | Software tools, analyzers, and resource lists |
+
+Each artifact is mapped to one of five ecosystem layers:
+
+```
+Layer 1 — Raw sources
+Layer 2 — Datasets & corpora
+Layer 3 — Models
+Layer 4 — Benchmarks & evaluation
+Layer 5 — Applications & frontier
 ```
 
 ---
 
-## Dataset Details
+## Files
 
-### 1. 660K-AZ-EN-Parallel ⭐ (AZ-DATA-011)
-- **Size:** 666,000 sentence pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/660K_AZERBAIJAN-ENGLISH_PARALLEL
-- **Format:** CSV with columns: sentence, id, source, reliability, sentence_en
-- **Sources:** az_wiki + others
-- **Features:** 
-  - UUID tracking for deduplication
-  - Reliability scores (3-5)
-  - Source attribution
-- **Significance:** Largest publicly available Azerbaijani-English parallel corpus
-
-### 2. Orca-AZ (AZ-DATA-012)
-- **Size:** 500,000 instruction-response pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/orca_firstpart_AZ
-- **Format:** JSON with question/response columns
-- **Significance:** Large-scale Azerbaijani instruction dataset for LLM fine-tuning
-
-### 3. AzCon (AZ-DATA-013)
-- **Size:** 237,000 conversational QA pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/azcon
-- **Format:** JSON with question/answer columns
-- **Significance:** Azerbaijani conversational/assistant-style QA dataset
-
-### 4. UltraFeedback-AZ ⭐ (AZ-DATA-014)
-- **Size:** 61,100 preference pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/ultrafeedback_binarized-BIZIM
-- **Format:** Binarized preference format
-- **Significance:** **First public Azerbaijani preference dataset** for RLHF/DPO training
-
-### 5. Alpaca-AZ-Cleaned (AZ-DATA-015)
-- **Size:** 51,800 instruction pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/alpaca-cleaned_AZERBAIJANI
-- **Significance:** Azerbaijani translation of the popular Stanford Alpaca dataset
-
-### 6. AZ-EN-Dataset (AZ-DATA-016)
-- **Size:** 549,000 sentence pairs
-- **URL:** https://huggingface.co/datasets/omar07ibrahim/AZERBAIJAN-ENGLISH-DATASET
-- **Significance:** Additional large-scale parallel corpus
+```
+almaz-roster/
+├── data/
+│   ├── registry.csv        ← primary artifact table (human-readable)
+│   ├── registry.json       ← same data for programmatic use
+│   └── registry.xlsx       ← formatted spreadsheet with legend and stats
+├── docs/
+│   ├── schema.md           ← column definitions and type taxonomy
+│   ├── contributing.md     ← how to add or update an artifact
+│   └── changelog.md        ← version history and Zenodo DOIs
+├── scripts/
+│   ├── validate.py         ← checks for broken links, missing fields, duplicates
+│   └── stats.py            ← generates coverage statistics by type and layer
+├── .github/workflows/
+│   ├── validate.yml        ← runs validate.py on every pull request
+│   └── zenodo-release.yml  ← mints a new DOI on every version tag
+├── CITATION.cff            ← machine-readable citation metadata
+├── LICENSE                 ← CC-BY 4.0
+└── README.md               ← this file
+```
 
 ---
 
-## Impact Summary
+## Registry schema
 
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Total artifacts | 36 | 42 | +6 |
-| Dataset count | 10 | 16 | +6 |
-| Translation pairs | ~60K | ~1.8M | +1.7M |
-| Instruction samples | 0 | ~550K | +550K |
-| Preference pairs | 0 | 61K | +61K |
+Each row in `registry.csv` describes one artifact:
 
-### New Capabilities Enabled
-1. **Machine Translation:** 1.7M+ new parallel sentence pairs
-2. **Instruction Tuning:** 550K+ samples for fine-tuning LLMs
-3. **RLHF/DPO Alignment:** First preference dataset enables human feedback alignment
-4. **Conversational AI:** 237K QA pairs for chatbot training
+| Column | Description | Example |
+|---|---|---|
+| `id` | Stable identifier | `AZ-CORP-001` |
+| `name` | Human-readable name | `DOLLMA` |
+| `type` | One of: corpus · dataset · benchmark · model · tool | `corpus` |
+| `layer` | Ecosystem layer (1–5) | `2` |
+| `source` | Where the artifact lives | `HuggingFace / allmalab` |
+| `size` | Tokens, samples, or parameters | `651M words` |
+| `domain` | Topic coverage | `general · news · legal` |
+| `license` | License identifier | `CC-BY-SA` |
+| `link` | Direct URL | `https://...` |
+| `paper` | ALMAZ paper(s) that cover it | `P2` |
+| `notes` | Key caveats or context | `Primary LLM pretraining corpus` |
 
----
-
-## Contributor Attribution
-
-**omar07ibrahim** (Omar)
-- Profile: https://huggingface.co/omar07ibrahim
-- Focus: NLP & Low resource languages
-- Organizations: Data Is Better Together Contributor, Waifu Research Department
-- Also maintains 4 models including NLLB_az fine-tune
+Full column definitions are in [`docs/schema.md`](docs/schema.md).
 
 ---
 
-## Files in This Update
+## Quick start
 
-1. `almaz_registry_v021.csv` - Complete updated registry
-2. `CHANGELOG.md` - Version history
-3. `README_UPDATE.md` - This file
+```python
+import pandas as pd
+
+df = pd.read_csv("data/registry.csv")
+
+# All corpora
+corpora = df[df["type"] == "corpus"]
+
+# Layer 4 benchmarks only
+benchmarks = df[(df["type"] == "benchmark") & (df["layer"] == 4)]
+
+# Open-licensed artifacts
+open_artifacts = df[df["license"].isin(["CC-BY", "CC-BY-SA", "MIT", "Apache-2.0", "CC0"])]
+
+print(df.groupby("type")["id"].count())
+```
+
+---
+
+## How to cite
+
+If you use this roster in your research, please cite:
+
+```bibtex
+@dataset{almaz_registry_2026,
+  title     = {{ALMAZ} Resource Roster: A Curated Catalog of
+               Azerbaijani {NLP} Artifacts},
+  author    = {Orhan Ibrahimzade},
+  year      = {2026},
+  version   = {0.1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.19023843},
+  url       = {https://github.com/almaz-nlp/almaz-roster},
+  note      = {Shared reference dataset for the ALMAZ paper series}
+}
+```
+
+---
+
+## Citing the ALMAZ paper series
+
+Each paper in the series cites the roster version that existed at submission time.
+
+| Paper | Short title | Registry version cited |
+|---|---|---|
+| Paper 1 — ALMAZ-Survey | Mapping the Azerbaijani AI ecosystem | v0.1.0 |
+| Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.0 |
+| Paper 3 — ALMAZ-LM | Large language models for Azerbaijani | v0.3.0 |
+| Paper 4 — ALMAZ-Bench | Evaluating Azerbaijani language models | v0.4.0 |
+| Paper 5 — ALMAZ-Road | Building the future of Azerbaijani AI | v0.5.0 |
+
+---
+
+## Contributing
+
+We welcome additions and corrections. Before opening a pull request:
+
+1. Read [`docs/contributing.md`](docs/contributing.md)
+2. Add your artifact(s) to `data/registry.csv` following the schema
+3. Run `python scripts/validate.py` to check for errors
+4. Open a PR — the CI workflow will run validation automatically
+
+Every merged PR that adds new artifacts triggers a minor version bump.
+
+---
+
+## Versioning and DOIs
+
+Each release is archived on [Zenodo](https://zenodo.org) with a permanent DOI.
+
+| Version | DOI | Notes |
+|---|---|---|
+| v0.1.0 | 10.5281/zenodo.19023843 | Seed data — 36 artifacts |
+
+Use the DOI of the specific version you used, not the concept DOI, to ensure reproducibility.
+
+---
+
+## License
+
+The roster metadata is released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/). Individual artifacts have their own licenses — see the `license` column in the roster.
+
+---
+
+## Acknowledgements
+
+This registry builds on prior community work, in particular the [awesome-azerbaijani-nlp](https://github.com/alexeyev/awesome-azerbaijani-nlp) list by Alex Alekseyev, the [aLLMA Lab](https://huggingface.co/allmalab) DOLLMA corpus and benchmark suite, and the [TUMLU](https://github.com/ceferisbarov/TUMLU) benchmark by Jafar Isbarov and collaborators.
+
+---
+
+*الماز · алмаз · almaz — diamond of Azerbaijani NLP*
