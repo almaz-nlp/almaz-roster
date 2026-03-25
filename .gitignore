@@ -1,0 +1,4 @@
+
+# Ignore massive corpus files
+corpus*.txt
+*.tar.gz
