@@ -4,8 +4,8 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19023843.svg)](https://doi.org/10.5281/zenodo.19023843)
-[![Artifacts](https://img.shields.io/badge/artifacts-36-blue.svg)]()
-[![Version](https://img.shields.io/badge/version-0.1.0-green.svg)]()
+[![Artifacts](https://img.shields.io/badge/artifacts-44-blue.svg)]()
+[![Version](https://img.shields.io/badge/version-0.2.1-green.svg)]()
 
 The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP artifacts. It is the shared reference dataset for the [ALMAZ paper series](#citing-the-almaz-paper-series) and is designed to support reproducible research in low-resource Azerbaijani language technology.
 
@@ -17,16 +17,16 @@ The ALMAZ Resource Roster is a curated, versioned catalog of Azerbaijani NLP art
 
 ---
 
-## Registry contents
+## Roster contents
 
-The roster currently covers **36 artifacts** across five types:
+The roster currently covers **44 artifacts** across five types:
 
 | Type | Count | Description |
 |---|---|---|
-| Corpus | 9 | Raw and cleaned text corpora for pretraining |
-| Dataset | 10 | Labeled datasets for fine-tuning and evaluation |
+| Corpus | 13 | Raw and cleaned text corpora for pretraining |
+| Dataset | 11 | Labeled datasets for fine-tuning and evaluation |
 | Benchmark | 4 | Standardized evaluation suites |
-| Model | 10 | Pretrained and fine-tuned language models |
+| Model | 13 | Pretrained and fine-tuned language models |
 | Tool | 3 | Software tools, analyzers, and resource lists |
 
 Each artifact is mapped to one of five ecosystem layers:
@@ -59,6 +59,8 @@ almaz-roster/
 ├── .github/workflows/
 │   ├── validate.yml        ← runs validate.py on every pull request
 │   └── zenodo-release.yml  ← mints a new DOI on every version tag
+├── figures/
+│   └── almaz_ecosystem.svg ← hero diagram (CC-BY 4.0)
 ├── CITATION.cff            ← machine-readable citation metadata
 ├── LICENSE                 ← CC-BY 4.0
 └── README.md               ← this file
@@ -114,12 +116,12 @@ print(df.groupby("type")["id"].count())
 If you use this roster in your research, please cite:
 
 ```bibtex
-@dataset{almaz_registry_2026,
+@dataset{ibrahimzade2026almaz_roster,
   title     = {{ALMAZ} Resource Roster: A Curated Catalog of
                Azerbaijani {NLP} Artifacts},
   author    = {Orhan Ibrahimzade},
   year      = {2026},
-  version   = {0.1.0},
+  version   = {0.2.1},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.19023843},
   url       = {https://github.com/almaz-nlp/almaz-roster},
@@ -133,13 +135,13 @@ If you use this roster in your research, please cite:
 
 Each paper in the series cites the roster version that existed at submission time.
 
-| Paper | Short title | Registry version cited |
-|---|---|---|
-| Paper 1 — ALMAZ-Survey | Mapping the Azerbaijani AI ecosystem | v0.1.0 | 10.5281/zenodo.19023842. 
-| Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.0 | 0.5281/zenodo.19262583
-| Paper 3 — ALMAZ-LM | Large language models for Azerbaijani | v0.3.0 |
-| Paper 4 — ALMAZ-Bench | Evaluating Azerbaijani language models | v0.4.0 |
-| Paper 5 — ALMAZ-Road | Building the future of Azerbaijani AI | v0.5.0 |
+| Paper | Short title | Roster version | DOI |
+|---|---|---|---|
+| Paper 1 — ALMAZ-Survey | Mapping the Azerbaijani AI ecosystem | v0.1.0 | [10.5281/zenodo.19023843](https://doi.org/10.5281/zenodo.19023843) |
+| Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.0 | [10.5281/zenodo.19262583](https://doi.org/10.5281/zenodo.19262583) |
+| Paper 3 — ALMAZ-LM | Large language models for Azerbaijani | v0.3.0 | pending |
+| Paper 4 — ALMAZ-Bench | Evaluating Azerbaijani language models | v0.4.0 | pending |
+| Paper 5 — ALMAZ-Road | Building the future of Azerbaijani AI | v0.5.0 | pending |
 
 ---
 
@@ -162,7 +164,8 @@ Each release is archived on [Zenodo](https://zenodo.org) with a permanent DOI.
 
 | Version | DOI | Notes |
 |---|---|---|
-| v0.1.0 | 10.5281/zenodo.19023843 | Seed data — 36 artifacts |
+| v0.1.0 | [10.5281/zenodo.19023843](https://doi.org/10.5281/zenodo.19023843) | Seed data — 36 artifacts |
+| v0.2.1 | pending | 44 artifacts — speech · translation · government added |
 
 Use the DOI of the specific version you used, not the concept DOI, to ensure reproducibility.
 
@@ -176,8 +179,8 @@ The roster metadata is released under [CC-BY 4.0](https://creativecommons.org/li
 
 ## Acknowledgements
 
-This registry builds on prior community work, in particular the [awesome-azerbaijani-nlp](https://github.com/alexeyev/awesome-azerbaijani-nlp) list by Alex Alekseyev, the [aLLMA Lab](https://huggingface.co/allmalab) DOLLMA corpus and benchmark suite, and the [TUMLU](https://github.com/ceferisbarov/TUMLU) benchmark by Jafar Isbarov and collaborators.
+This roster builds on prior community work, in particular the [awesome-azerbaijani-nlp](https://github.com/alexeyev/awesome-azerbaijani-nlp) list by Alex Alekseyev, the [aLLMA Lab](https://huggingface.co/allmalab) DOLLMA corpus and benchmark suite, and the [TUMLU](https://github.com/ceferisbarov/TUMLU) benchmark by Jafar Isbarov and collaborators.
 
 ---
 
-*الماز · алмаз · almaz — diamond of Azerbaijani NLP*
+*الماز · алмاز · almaz — diamond of Azerbaijani NLP*
