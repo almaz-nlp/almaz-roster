@@ -138,7 +138,7 @@ Each paper in the series cites the roster version that existed at submission tim
 | Paper | Short title | Roster version | DOI |
 |---|---|---|---|
 | Paper 1 — ALMAZ-Survey | Mapping the Azerbaijani AI ecosystem | v0.1.0 | [10.5281/zenodo.19023843](https://doi.org/10.5281/zenodo.19023843) |
-| Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.0 | [10.5281/zenodo.19262583](https://doi.org/10.5281/zenodo.19262583) |
+| Paper 2 — ALMAZ-Corpus | The Azerbaijani text data landscape for LLMs | v0.2.1 | [10.5281/zenodo.19262583](https://doi.org/10.5281/zenodo.19262583) |
 | Paper 3 — ALMAZ-LM | Large language models for Azerbaijani | v0.3.0 | pending |
 | Paper 4 — ALMAZ-Bench | Evaluating Azerbaijani language models | v0.4.0 | pending |
 | Paper 5 — ALMAZ-Road | Building the future of Azerbaijani AI | v0.5.0 | pending |
