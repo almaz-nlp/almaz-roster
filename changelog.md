@@ -36,6 +36,10 @@ New datasets from **omar07ibrahim** (HuggingFace contributor):
 
 ---
 
+## v0.2.1 (2026-03-27)
+**Zenodo DOI:10.5281/zenodo.19262583
+
+
 ## v0.2.0 (2026-03-14)
 
 - Previous version with 36 artifacts
